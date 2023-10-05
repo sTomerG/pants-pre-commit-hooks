@@ -2,7 +2,7 @@
     name: pants fmt
     always_run: false
     description: runs ./pants fmt on python files
-    entry: ./pants --no-dynamic-ui fmt
+    entry: 'pants --no-dynamic-ui fmt ::'
     language: system
     pass_filenames: true
     types: [file,python]
@@ -10,7 +10,7 @@
     name: pants lint
     always_run: false
     description: runs ./pants --no-dynamic-ui lint on python files
-    entry: ./pants --no-dynamic-ui lint
+    entry: 'pants --no-dynamic-ui lint ::'
     language: system
     pass_filenames: true
     types: [file,python]
@@ -18,7 +18,7 @@
     name: pants check
     always_run: false
     description: runs ./pants --no-dynamic-ui check on python files
-    entry: ./pants --no-dynamic-ui check
+    entry: 'pants --no-dynamic-ui check ::'
     language: system
     pass_filenames: true
     types: [file,python]
@@ -26,7 +26,7 @@
     name: pants test
     always_run: false
     description: runs ./pants --no-dynamic-ui test on python files
-    entry: ./pants --no-dynamic-ui test
+    entry: 'pants --no-dynamic-ui test ::'
     language: system
     pass_filenames: true
     types: [file,python]
